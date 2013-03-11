@@ -1,0 +1,11 @@
+AddCharset UTF-8 .css
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /perelaar/
+RewriteRule ^$ template/controller.php
+RewriteRule ^([a-z]+)_en$ template/controller.php?page=$1&lang=en [QSA,L]
+RewriteRule ^([a-z]+)_([a-z]{2})$ template/controller.php?page=$1&lang=$2 [QSA,L]
+RewriteRule ^([a-z]+)$ template/controller.php?page=$1 [QSA,L]
+</IfModule>
+

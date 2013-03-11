@@ -1,0 +1,33 @@
+<?php
+	$title = 'Kamers';
+
+	function output_content() {
+?>
+
+<p id="photos"><img src="foto/cups.jpg"><img src="foto/room12.jpg"><img src="foto/key.jpg"><img src="foto/mirror.jpg"><img src="foto/view.jpg"><img src="foto/bed.jpg"></p>
+
+<p>De Perelaar heeft twee luxe tweepersoonskamers, elk met een schitterend uitzicht. De kamers zijn van hoge kwaliteit en stijlvol ingericht.</p>
+
+<p>Elke kamer is voorzien van een flatscreen televisie, wekker-radio, gratis lokaal bellen, zitje en mogelijkheid om koffie en thee te zetten.</p>
+
+<p>Iedere kamer heeft een eigen badkamer en suite met ligbad, douche, toilet en wastafel.</p>
+
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){ 
+        $('#viewer').after('<div id="boxView"><img id="viewing" src=""></div>');
+        $('#viewing').attr('src',$('#viewer img:first').attr('src',this.src));
+        $('#viewer img:first').addClass('hover');
+        $('#viewer img').mouseover(function(){
+            $('#viewer img').removeClass('hover');
+            $(this).addClass('hover');
+            $('#viewing').attr('src',this.src);
+        });
+    });
+</script>
+
+<div id="viewer"><img src="foto/window.jpg"> <img src="foto/ensuite.jpg"> <img src="foto/bathroom.jpg"> <img src="foto/stool.jpg"></div>
+
+<?php
+	}
+?>
