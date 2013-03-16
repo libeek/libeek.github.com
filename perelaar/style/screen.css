@@ -1,15 +1,15 @@
-/* Stylesheet copyright ©2007 De Perelaar. Alle rechten voorbehouden. *//* Palette: dark teal #2c4a52, medium teal #66939e, bright teal #006480, dark brown #513a24, light brown #9e8166, white. *//* Dark teal background. */body { font:80%/1.3em Arial,Helvetica,sans-serif; background:#2c4a52; margin:0;}/* Dark teal on white page area; inverse on home page. */#content { color:#2c4a52; background:white; width:460px; margin:0; padding:255px 20px 10px 240px; border-top:solid 5px #513a24;}body#home #content { color:white; background:#66939e;}#masthead, #photos, #navigation, #language { position:absolute;}/* Masthead graphic text replaces H1 text. */#masthead { top:21px; left:253px; background:url(de-perelaar.png) top left no-repeat; width:600px; height:100px;}body#home #masthead { background-image:url(de-perelaar-home.png);}#masthead h1 { display:none;}/* Row of sqaure photos. */#photos { margin:0; top:100px; left:0;
+/* Stylesheet copyright ©2007 De Perelaar. Alle rechten voorbehouden. *//* Palette: dark teal #2c4a52, medium teal #66939e, bright teal #006480, dark brown #513a24, light brown #9e8166, white. *//* Dark teal background. */body { font:80%/1.3em Arial,Helvetica,sans-serif; background:#2c4a52; margin:0;}/* Dark teal on white page area; inverse on home page. */#content { color:#2c4a52; background:white; width:460px; margin:0; padding:255px 20px 10px 240px; border-top:solid 5px #513a24;}body#index #content { color:white; background:#66939e;}#masthead, #photos, #navigation, #language { position:absolute;}/* Masthead graphic text replaces H1 text. */#masthead { top:21px; left:253px; background:url(de-perelaar.png) top left no-repeat; width:600px; height:100px;}body#index #masthead { background-image:url(de-perelaar-home.png);}#masthead h1 { display:none;}/* Row of sqaure photos. */#photos { margin:0; top:100px; left:0;
  width:720px;}/* Horizontal navigation menu. */#navigation { top:220px; left:240px; width:720px; list-style:none; padding-left:0;
- margin-left:0;}#navigation li { font-size:111%; float:left; padding-right:28px; margin-right:10px; background:url(bullet.png) 100% 50% no-repeat; text-transform:lowercase;}body#home #navigation li { background-image:url(bullet-home.png);}#navigation a { color:2c4a52; text-decoration:none;}body#home #navigation a { color:white;}#navigation a:hover {color:#006480; }/* Language selection */body#home #language a { color:white;}#language { top:220px; left:20px; text-transform:uppercase; font-size:80%; line-height:2em;}#language a { padding:0 0 10px 20px; background:url(langiconclassic_r9_c23.png) top left no-repeat;}/* Footer small print with an ornament above it. */#footer {
+ margin-left:0;}#navigation li { font-size:111%; float:left; padding-right:28px; margin-right:10px; background:url(bullet.png) 100% 50% no-repeat; text-transform:lowercase;}body#index #navigation li { background-image:url(bullet-home.png);}#navigation a { color:2c4a52; text-decoration:none;}body#index #navigation a { color:white;}#navigation a:hover {color:#006480; }/* Language selection */body#index #language a { color:white;}#language { top:220px; left:20px; text-transform:uppercase; font-size:80%; line-height:2em;}#language a { padding:0 0 10px 20px; background:url(langiconclassic_r9_c23.png) top left no-repeat;}/* Footer small print with an ornament above it. */#footer {
 font-size:85%;
 color:#9e8166;
- margin-top:40px; padding-top:57px; background:url(ornament.png) top center no-repeat;}body#home #footer { color:#2c4a52; background-image:url(ornament-home.png);}#footer a {
+ margin-top:40px; padding-top:57px; background:url(ornament.png) top center no-repeat;}body#index #footer { color:#2c4a52; background-image:url(ornament-home.png);}#footer a {
 color:#2c4a52;
 }/* Main content. */h2 {
  font-size:110%;
 }
 
-ol li { margin-bottom:0.5em; }.unindent { margin-left:-120px; }body#home .introduction { color:#2c4a52; margin-top:0; margin-bottom:0.5em; font-size:125%; line-height:150%; }.right {
+ol li { margin-bottom:0.5em; }.unindent { margin-left:-120px; }body#index .introduction { color:#2c4a52; margin-top:0; margin-bottom:0.5em; font-size:125%; line-height:150%; }.right {
  float:right;
  margin:0 0 2em 2em;	
 }
@@ -21,7 +21,7 @@ color:#2c4a52;
 .photo {
  margin-bottom:0;
 }
-body#home .photo img { border:solid 3px white; }.caption {
+body#index .photo img { border:solid 3px white; }.caption {
 color:#2c4a52; font-size:90%;
 margin-top:0;
  margin-bottom:2em;

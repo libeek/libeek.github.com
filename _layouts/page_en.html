@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+{% capture page_id %}{{ page.url | replace: '/perelaar/', '' | replace: '.html' }}{% endcapture %}
+<title>B&amp;B De Perelaar - {{ page.title }}</title>
+<meta name="description" content="A new Bed &amp; Breakfast with two luxury rooms in an exclusive country-side location in Libeek, South Limburg, in rolling hills 10 Km from Maastricht" />
+<link rel="shortcut icon" href="/perelaar/favicon.ico">
+<link rel="stylesheet" type="text/css" href="style/screen.css">
+<style type="text/css">
+</style>
+</head>
+<body id="<?= $page ?>">
+
+<div id="content">
+
+<div id="masthead">
+<h1>B&amp;B De Perelaar</h1>
+</div>
+
+{{ content }}
+
+<p id="language"><a href="{{ page_id | replace: '_en', '' }}">Nederlands</a></p>
+
+<ul id="navigation">
+{% assign menu_url = 'index_en' %}{% assign menu_label = 'Home' %}{% include menu.html %}
+{% assign menu_url = 'locatie_en' %}{% assign menu_label = 'Location' %}{% include menu.html %}
+{% assign menu_url = 'kamers_en' %}{% assign menu_label = 'Rooms' %}{% include menu.html %}
+{% assign menu_url = 'adres_en' %}{% assign menu_label = 'Address &amp; directions' %}{% include menu.html %}
+{% assign menu_url = 'tarieven_en' %}{% assign menu_label = 'Rates' %}{% include menu.html %}
+</ul>
+
+<p id="footer">All interior photos were taken inside De Perelaar and all exterior photos in Libeek and the immediate environment. Web site content and design copyright &copy;2007-2013 De Perelaar. All rights reserved.</p>
+
+</div>
+
+</body>
+</html>

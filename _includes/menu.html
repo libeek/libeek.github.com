@@ -1,0 +1,7 @@
+<li>
+{% if page_id == menu_url or (page_id == 'index' and menu_url == '.') %}
+<strong>{{ menu_label }}</strong>
+{% else %}
+<a href="{{ menu_url }}">{{ menu_label }}</a>
+{% endif %}
+</li>
