@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 {% capture page_id %}{{ page.url | replace: '/perelaar/', '' | replace: '.html' }}{% endcapture %}
-{% unless page_id %}{% assign page_id = 'index' %}{% endunless %}
+{% if page_id == '' %}{% assign page_id = 'index' %}{% endif %}
 <title>B&amp;B De Perelaar - {{ page.title }}</title>
 <meta name="description" content="Een nieuwe Bed &amp; Breakfast met twee luxe kamers op een exclusieve en landelijke locatie in Libeek, Zuid-Limburg, op 10 km afstand van Maastricht midden in het Heuvelland." />
 <link rel="shortcut icon" href="/perelaar/favicon.ico">

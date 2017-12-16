@@ -3,7 +3,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
 {% capture page_id %}{{ page.url | replace: '/perelaar/', '' | replace: '.html' }}{% endcapture %}
-{% unless page_id %}{% assign page_id = 'index_en' %}{% endunless %}
+{% if page_id == '' %}{% assign page_id = 'index' %}{% endif %}
 <title>B&amp;B De Perelaar - {{ page.title }}</title>
 <meta name="description" content="A new Bed &amp; Breakfast with two luxury rooms in an exclusive country-side location in Libeek, South Limburg, in rolling hills 10 Km from Maastricht" />
 <link rel="shortcut icon" href="/perelaar/favicon.ico">
@@ -11,7 +11,7 @@
 <style type="text/css">
 </style>
 </head>
-<body id="<?= $page ?>">
+<body id="{{ page_id | replace: '_en' }}">
 
 <div id="content">
 
